@@ -1,4 +1,4 @@
-# Contribution: [Issue Title]
+# Contribution: API docs don't include example `curl` commands
 
 Path: `beat-2-contribution/contribution-story.md`
 
@@ -7,11 +7,10 @@ the repository is not read. **Keep every section header below under its exact na
 format criteria grade exactly that. Your course repo link is the whole submission: no tool
 files and no evidence uploads are part of Assignment 5.
 
-**Contribution Number:** [1]
-**Student:** [Student name]
-**GitHub Username:** [your GitHub username, exactly as it appears on your profile - no @, no
-profile URL. Your comments upstream are identified by this name.]
-**Issue:** [GitHub issue link]
+**Contribution Number:** 1
+**Student:** Aishwarya Niroula
+**GitHub Username:** AishNiroula
+**Issue:** https://github.com/ascherj/pathreview/issues/117
 **Pull Request:** [GitHub PR link, once opened]
 
 One repository, built across units 5 to 8, telling the whole story of your real
@@ -62,9 +61,10 @@ or fell short, what changed because of it.]
 
 **Unit 6: [one line on the tool work]**
 
-[2-4 sentences: the voice-guard, the repo-memory file. What broke or
-fell short, and what changed because of it. "Nothing broke" counts when
-it is true - say how you know.]
+[TODO: 2-4 sentences, only once true: the voice guard and repo memory
+file. Known so far: Claude Code refused to start with "Your
+organization has disabled Claude subscription access for Claude Code",
+so the guard's wiring test could not run until an API key was set up.]
 
 **Unit 7: [one line on the tool work]**
 
@@ -80,24 +80,30 @@ drafted, what you did with the draft.]
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs in your own words: how you searched, what your scan
-surfaced, what your scout's verdict said, why this issue fits your
-profile, and what you hope to learn. If your scout's verdict on it
-was reject and you chose it anyway, say so here and say why; choosing
-against your own tool silently is what loses points. Close with an
-honest read of the tool itself: where the scout fell short on a real
-wild search and what you changed or would change, or what convinced
-you it held up. **Record the link to your claim comment in this section too.**
-Not claimed yet? Write `claim pending` and today's date where the link goes,
-and add the link the moment your claim lands.]
+Issue #117 asks for example `curl` commands in `docs/API.md`, which
+describes each endpoint but shows no example invocations, so a developer
+setting the project up for the first time can't quickly check that the
+API works. It is labeled docs, good first issue and tier-1, names the one
+file involved, and estimates 2-3 hours, so by my own reading it is
+bounded work. [TODO: where you found it, which issues your scout graded,
+and what its verdict and difficulty note said about this one.] [TODO: why
+it fits you and what you hope to learn.] [TODO: an honest read of how
+your scout did.]
+
+Two things I noticed on the thread: many people had already asked to work
+on this issue, and the repository is archived and read-only, so a pull
+request can't be opened against it. [TODO: say how that affects your
+plan.]
+
+**Claim comment:** I commented on this issue on Jul 13, 2026: [TODO: paste
+the link to YOUR comment, via ... then Copy link; not someone else's]
 
 **Toolkit**
 
-- Tool: issue-scout (your scout: your search strategy, your rubric),
-  and how you used it
-- What it produced: [the scan and its verdict on this issue, described]
-- Difficulties: [where it fell short, or "none met" if none did]
-- What changed: [what you patched or would update, or "nothing"]
+- Tool: issue-scout, with my search strategy and rubric
+- What it produced: [TODO: the scan and its verdict on this issue]
+- Difficulties: [TODO: where it fell short, or "none met"]
+- What changed: [TODO: the scope-check patch, or "nothing"]
 
 ---
 
@@ -105,19 +111,22 @@ and add the link the moment your claim lands.]
 
 **Problem Description**
 
-[In your own words, what is broken or missing?]
+`docs/API.md` describes each endpoint but has no example invocations, so
+someone setting the project up can't quickly verify the API is working.
 
 **Expected Behavior**
 
-[What should happen?]
+Each documented endpoint has a copy-pasteable `curl` example that works
+against a local dev server.
 
 **Current Behavior**
 
-[What actually happens?]
+The endpoints are described in prose with no example commands.
 
 **Affected Components**
 
-[Which parts of the codebase are involved?]
+`docs/API.md`. [TODO: add the server or route files you check the
+examples against.]
 
 **Toolkit**
 
@@ -132,24 +141,19 @@ and add the link the moment your claim lands.]
 
 **Environment Setup**
 
-[What a stranger would need to stand this up: your operating system,
-the relevant versions (language, runtime, package manager, the project
-itself), and how you set the project up. Then the challenges you faced
-and how you solved them, or that none came up.]
+[TODO: your OS, versions, and how you set the project up.]
 
 **Steps to Reproduce**
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+1. Clone the repo and open `docs/API.md`.
+2. Run `grep -c curl docs/API.md`.
+3. Observed: [TODO: your actual result; the issue says there are no examples.]
 
 **Reproduction Evidence**
 
-- **Commit showing reproduction:** [link to commit in your fork]
-- **Screenshots/logs:** [if applicable]
-- **My findings:** [what you discovered during reproduction; an
-  honest, evidenced cannot-reproduce that led you to re-pick or ask
-  the maintainer belongs here and costs you nothing]
+- **Commit showing reproduction:** [TODO: link, or "none"]
+- **Screenshots/logs:** [TODO: your grep output]
+- **My findings:** [TODO: what you actually found]
 
 **Toolkit**
 
