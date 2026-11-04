@@ -1,16 +1,9 @@
-# Contribution: [Issue Title]
+# Contribution: API docs don't include example `curl` commands
 
-**Contribution Number:** [1]
-**Student:** [Student name]
-**Issue:** [GitHub issue link]
-**Pull Request:** [GitHub PR link, once opened]
-
-<!--
-This is the blank template for an extra contribution. Copy this file
-to contribution-story-2.md (then -3, and so on) to record another
-one, and set Contribution Number to match. Extra contributions are
-welcome and never graded; contribution-story.md is the graded one.
--->
+**Contribution Number:** 2
+**Student:** Aishwarya Niroula
+**Issue:** https://github.com/ascherj/pathreview/issues/117
+**Pull Request:** none (the repository is archived and read-only)
 
 ---
 
@@ -44,44 +37,52 @@ happened; these entries are the toolkit's own timeline.
 
 ### Unit 5: [one line on the tool work]
 
-[2-4 sentences: what you built (the scout, your strategy), what broke
-or fell short, what changed because of it.]
+[TODO: what you built (the scout, your strategy), what broke or fell
+short, what changed because of it.]
 
 ### Unit 6: [one line on the tool work]
 
-[2-4 sentences: what you built or changed (the voice-guard, your
-voice guide), what broke or fell short, what changed because of it.]
+[TODO: the voice-guard and your voice guide. Known so far: Claude Code
+refused to start with "Your organization has disabled Claude subscription
+access for Claude Code", so the guard's wiring test could not run until
+an API key was set up.]
 
 ### Unit 7: [one line on the tool work]
 
-[2-4 sentences: what you built or changed (the ship-gate, your
-manifest), what broke or fell short, what changed because of it.]
+[TODO: the ship-gate and your manifest.]
 
 ### Unit 8: [one line on the tool work]
 
-[2-4 sentences: the monitor: what it read, what it drafted, what you
-did with the draft (sending and declining both count), what changed
-because of it.]
+[TODO: the monitor: what it read, what it drafted, what you did with the
+draft.]
 
 ---
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs in your own words: how you searched, what your scan
-surfaced, what your scout's verdict said, why this issue fits your
-profile, and what you hope to learn. If your scout's verdict on it
-was reject and you chose it anyway, say so here and say why; choosing
-against your own tool silently is what loses points. Close with an
-honest read of the tool itself: where the scout fell short on a real
-wild search and what you changed or would change, or what convinced
-you it held up.]
+Issue #117 asks for example `curl` commands in `docs/API.md`, which
+describes each endpoint but shows no example invocations, so a developer
+setting the project up for the first time can't quickly check that the
+API works. It is labeled docs, good first issue and tier-1, names the one
+file involved, and estimates 2-3 hours, so by my own reading it is
+bounded work.
+
+I commented on the issue on Jul 13, 2026, saying I wanted to work on it
+and add `curl` examples for each documented endpoint. [TODO: paste the
+link to YOUR comment.] Many other people also asked to work on it, and the
+repository is archived and read-only, so no pull request can be opened.
+That is why this is an extra round and not my graded contribution.
+
+[TODO: where you found it, which issues your scout graded, what its
+verdict and difficulty note said about this one, and an honest read of
+how the scout did.]
 
 **Toolkit**
 - Tool: issue-scout (your scout: your search strategy, your rubric),
   and how you used it
-- What it produced: [the scan and its verdict on this issue, described]
-- Difficulties: [where it fell short, or "none met" if none did]
-- What changed: [what you patched or would update, or "nothing"]
+- What it produced: [TODO: the scan and its verdict on this issue]
+- Difficulties: [TODO: where it fell short, or "none met"]
+- What changed: [TODO: what you patched or would update, or "nothing"]
 
 ---
 
@@ -89,19 +90,22 @@ you it held up.]
 
 ### Problem Description
 
-[In your own words, what is broken or missing?]
+`docs/API.md` describes each endpoint but has no example invocations, so
+someone setting the project up can't quickly verify the API is working.
 
 ### Expected Behavior
 
-[What should happen?]
+Each documented endpoint has a copy-pasteable `curl` example that works
+against a local dev server.
 
 ### Current Behavior
 
-[What actually happens?]
+The endpoints are described in prose with no example commands.
 
 ### Affected Components
 
-[Which parts of the codebase are involved?]
+`docs/API.md`. [TODO: add the server or route files you check the
+examples against.]
 
 **Toolkit**
 - Tool:
@@ -115,22 +119,20 @@ you it held up.]
 
 ### Environment Setup
 
-[Notes on setting up your local development environment: challenges
-you faced, how you solved them.]
+[TODO: your OS, versions, and how you set the project up.]
 
 ### Steps to Reproduce
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+1. Clone the repo and open `docs/API.md`.
+2. Run `grep -c curl docs/API.md`.
+3. Observed: [TODO: your actual result; the issue says there are no
+   examples.]
 
 ### Reproduction Evidence
 
-- **Commit showing reproduction:** [link to commit in your fork]
-- **Screenshots/logs:** [if applicable]
-- **My findings:** [what you discovered during reproduction; an
-  honest, evidenced cannot-reproduce that led you to re-pick or ask
-  the maintainer belongs here and costs you nothing]
+- **Commit showing reproduction:** [TODO: link, or "none"]
+- **Screenshots/logs:** [TODO: your grep output]
+- **My findings:** [TODO: what you actually found]
 
 **Toolkit**
 - Tool:
@@ -207,20 +209,15 @@ built, decisions you made when you made them, wrong turns included.]
 
 ## Pull Request
 
-**PR Link:** [GitHub PR URL when opened]
+**PR Link:** none, the repository is archived and read-only
 
-**PR Description:** [what the PR says; much of the content above
-adapts into it]
+**PR Description:** [not applicable]
 
 **Maintainer Feedback:**
 
-- [Date]: [feedback received, or "none yet"; silence is a normal
-  state and costs you nothing]
-- [Date]: [how you addressed it]
+- [Date]: [feedback received, or "none yet"]
 
-**Status:** [Awaiting review / Iterating / Merged / Closed. The
-status is a fact you record, never a grade: the PR is graded as
-opened.]
+**Status:** Closed: no PR possible
 
 **Toolkit**
 - Tool:
@@ -249,5 +246,4 @@ Toolkit blocks above are full of them.]
 
 ## Resources Used
 
-- [Link to documentation that helped]
-- [Discussion, issue, or post that helped]
+- https://github.com/ascherj/pathreview/issues/117
