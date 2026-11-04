@@ -16,7 +16,6 @@ environment_recorded, steps_followable, behavior_matches_issue, outcome_honest, 
 
 Verdict rule: accept if every required check passes; unclear counts as fail.
 
-## How to run
 
 Copy this folder to ~/.claude/skills/repro-check/, set the Repo: line in scope.md, then:
 
