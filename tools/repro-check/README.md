@@ -1,6 +1,5 @@
 # repro-check
 
-A Claude Code skill that grades whether a reproduction package (claim comment + repro report) is ready to post on an upstream issue. It ends with a JSON verdict: accept or reject.
 
 ## Files
 
